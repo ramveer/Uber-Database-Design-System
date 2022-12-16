@@ -3,11 +3,16 @@ API
 ==============
 1.Signup -->v1/signup
 2.SignIn ->/v1/signin
-3.Search vehicle -> /v1/search/vehicle
+7.profile -->/v1/profile/
+8.add favaurite Destination -->/v1/add/destination
+3.Search matching vehicle or riders -> /v1/search/vehicle
 4.Create Driving alert -> /v1/driving/alert
+4.cancel driving alert ->/v1/driving/alert/cancel
 5.Create riding alert -> /v1/riding/alert
-6.accept ride by driver -->/v1/
-7.
+6.cancel riding alert -->/v1/riding/alert/cancel
+7.Trip history -> /v1/riding/history
+8.Driving share History->/v1/driving/history
+9.
 
 
 
