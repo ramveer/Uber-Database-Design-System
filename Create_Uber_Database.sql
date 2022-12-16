@@ -1,3 +1,18 @@
+
+API
+==============
+1.Signup -->v1/signup
+2.SignIn ->/v1/signin
+3.Search vehicle -> /v1/search/vehicle
+4.Create Driving alert -> /v1/driving/alert
+5.Create riding alert -> /v1/riding/alert
+6.accept ride by driver -->/v1/
+7.
+
+
+
+
+
 -------------------------
 --1)- Create User table
 -------------------------
