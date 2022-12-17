@@ -24,7 +24,7 @@ API
 
 CREATE TABLE USERS
 (
-  ID           varchar(15)     NOT NULL,
+  UberID           varchar(15)     NOT NULL,
   FName        varchar(50)     NOT NULL,
   LName        varchar(50)     NOT NULL,
   Gender
@@ -41,11 +41,11 @@ CREATE TABLE USERS
   CreatedAt    timestamp
   ModfiedAt    timestamp 
 
-  PRIMARY KEY(ID)
+  PRIMARY KEY(UberID)
 ); 
 
 --------------------------
---2)- Create Customer table
+--2)- Create Customer table --TBD
 --------------------------
 CREATE TABLE Customer
 (
@@ -64,10 +64,10 @@ DROP TABLE driver;
 CREATE TABLE Drivers
 (
   DID     varchar(15)      NOT NULL,
-  SSN          int          NOT NULL,
-  DLNo         varchar(50)      NOT NULL,
-  DLExpiry     DATE        NOT NULL,
-
+  DrivingLicenseNo         varchar(50)      NOT NULL, 
+  avgRating
+  isActVerified
+  isDrivingActLock 
   PRIMARY KEY(DID),
   FOREIGN KEY (DID) REFERENCES UberUser(UberID) ON DELETE CASCADE
 );
@@ -78,20 +78,20 @@ CREATE TABLE Drivers
 CREATE TABLE Vehicle 
 (
   VID             varchar(15)    NOT NULL,
-  DrID             varchar(50)    NOT NULL,
+  DrivingID       varchar(50)    NOT NULL,
+  VehicleType
+  NumberPlate
   ModelN          varchar(50)    NOT NULL,
   Color           varchar(20)    NOT NULL,
-  ManufYear       int           NOT NULL,
+  ManufCompany
   PurDate         DATE          NOT NULL,
-  Active          varchar(18)        NOT NULL,
-  Condition       varchar(15)    NOT NULL, 
-  Cpty              int        NOT NULL,
+  IsActive        varchar(18)        NOT NULL, 
+  Capicity        int        NOT NULL,
   InsuranceNo     varchar(15)    NOT NULL,
-  InsuranceExpiry varchar(15)    NOT NULL,
-  LastChecked     DATE        NOT NULL,
+  InsuranceExpiry varchar(15)    NOT NULL, 
 
   PRIMARY KEY(VID),
-  FOREIGN KEY (DrID) REFERENCES Driver(DID) ON DELETE CASCADE
+  FOREIGN KEY (DrivingID) REFERENCES Driver(DID) ON DELETE CASCADE
 );
 
 -----------------------
