@@ -19,20 +19,29 @@ API
 
 
 -------------------------
---1)- Create User table
+--1)- Create Users table
 -------------------------
 
-CREATE TABLE UberUSER
+CREATE TABLE USERS
 (
-  UberID       varchar(15)     NOT NULL,
+  ID           varchar(15)     NOT NULL,
   FName        varchar(50)     NOT NULL,
   LName        varchar(50)     NOT NULL,
-  PhNo         int        NOT NULL,
+  Gender
+  PhoneNo         int        NOT NULL,
   Email        varchar(50)     NOT NULL,
   Address      varchar(50)     NOT NULL,
   DOB          DATE        NOT NULL,
+  PasswordHash
+  isEmailVerified
+  isActActive
+  isActLock
+  ProfileImg
+  IsRegisteterdAsDriver
+  CreatedAt    timestamp
+  ModfiedAt    timestamp 
 
-  PRIMARY KEY(UberID)
+  PRIMARY KEY(ID)
 ); 
 
 --------------------------
@@ -49,10 +58,10 @@ CREATE TABLE Customer
 
 DROP TABLE driver;
 
---3)- Create Driver table
+--3)- Create Drivers table
 ----------------------
 ----------------------
-CREATE TABLE Driver
+CREATE TABLE Drivers
 (
   DID     varchar(15)      NOT NULL,
   SSN          int          NOT NULL,
