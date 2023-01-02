@@ -14,6 +14,16 @@ API
 8.Driving share History->/v1/driving/history
 9.
 
+Notification System
+-----------------------
+1.Email
+2.SMS/OTP
+3.Push notifications (Mobile and Web browser)
+4.send msg to Chat – Whatsapp/Telegram
+
+
+
+
 
 
 
