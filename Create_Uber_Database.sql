@@ -1,4 +1,26 @@
 
+Consulation website
+====================
+When managing appointments across different time zones, it's important to consider the following:
+
+Store all dates and times in a standardized format, such as UTC, to avoid ambiguity and confusion.
+
+Allow users to specify their local time zone, so that appointments can be displayed in the correct time for each individual.
+
+Convert the dates and times of appointments to the user's local time zone when displaying them, using a library or API that provides time zone information.
+
+When storing appointments in the database, consider using a column for the UTC time, as well as columns for the local time and local time zone of the appointment.
+
+When scheduling appointments, consider the time zone differences between the users and ensure that the appointment is scheduled at a mutually convenient time.
+
+By considering these factors, you can effectively manage appointments across different time zones, providing a seamless user experience for scheduling and attending appointments.
+
+
+
+
+
+
+
 API
 ==============
 1.Signup -->v1/signup
