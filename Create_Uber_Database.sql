@@ -15,10 +15,19 @@ When scheduling appointments, consider the time zone differences between the use
 
 By considering these factors, you can effectively manage appointments across different time zones, providing a seamless user experience for scheduling and attending appointments.
 
+API
+=====
+1.Authentication service
+2. search service
+3.profile mnagment service
+4.Registry Service
+5.Notification Service
 
 
 
 
+
+=====================================
 
 
 API
