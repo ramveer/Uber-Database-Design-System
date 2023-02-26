@@ -1,7 +1,8 @@
 
 Consulation website
 ====================
-When managing appointments across different time zones, it's important to consider the following:
+1. can use the libphonenumber library from Google to validate international phone numbers.
+2. When managing appointments across different time zones, it's important to consider the following:
 
 Store all dates and times in a standardized format, such as UTC, to avoid ambiguity and confusion.
 
